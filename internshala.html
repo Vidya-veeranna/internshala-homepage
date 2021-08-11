@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internshala</title>
+    <!--Bootstrap cDN-->
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+
+    <!--CSS link-->
+    <link rel="stylesheet" href="internShalaStyle.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/179bd1eb00.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------NAvigation bar------->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="https://trainings.internshala.com/static/images/logo.svg" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse header-links"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <p class="d-inline-block mb-0 mt-2">Online Training</p>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#mostPopular">Most Popular</a>
+                <a class="dropdown-item" href="#programming">Programming</a>
+                <a class="dropdown-item" href="#business&management"
+                  >Business & Management</a
+                >
+                <a class="dropdown-item" href="#coreEngi">Core Engineering</a>
+                <a class="dropdown-item" href="#datasc">Data Sciencec</a>
+                <a class="dropdown-item" href="#design">Design</a>
+                <a class="dropdown-item" href="#creativeart">Creative Arts</a>
+                <a class="dropdown-item" href="#language">Languages</a>
+                <a class="dropdown-item" href="#careerDev"
+                  >Career Development</a
+                >
+              </div>
+            </li>
+            <li class="nav-item login">
+              <a class="nav-link hover-border mb-0 mt-2" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--------End NAvigation bar------->
+
+    <!---------Slider------------->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://datahack-prod.s3.ap-south-1.amazonaws.com/__sized__/contest_cover/Data_Science_Contest_AV_Banner_Image-thumbnail-1200x1200.png"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://pbs.twimg.com/profile_banners/375030835/1520326507/1500x500"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.pagaldigital.com/wp-content/uploads/2020/06/Internship-Banner-1.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!---------End Slider------------->
+
+    <h3 class="text-center">Online Trainings we offer:</h3>
+
+    <section id="mostPopular" class="container mt-5">
+      <h5>Most Popular(10)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/web-development.jpg"
+          />
+          <h5>Web Development</h5>
+          <p>Learn how to create websites from scratch</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/digital-marketing.jpg"
+          />
+          <h5>Digital Marketing</h5>
+          <p>Learn SEO,Search Engine Marketing, Web Analytics and more</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/python.jpg"
+          />
+          <h5>Programming with Python</h5>
+          <p>Build a fantasy cricket using Python language</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/autocad.jpg"
+          />
+          <h5>AutoCAD</h5>
+          <p>Learn to build 2D drafts and 3D models in AutoCAD</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/excel.jpg"
+          />
+          <h5>Advanced Excel</h5>
+          <p>Learn how to use Microsoft Excel from scratch</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/machine-learning.jpg"
+          />
+          <h5>Machine Learning</h5>
+          <p>
+            Learn Machine Learning from scratch and take the first step towards
+            AI
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/android.jpg"
+          />
+          <h5>Android App Development</h5>
+
+          <p>Build your own food ordering app</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/data-science.jpg"
+          />
+          <h5>Data Science</h5>
+          <p>Learn the ABCs of Data Science</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/c-plus-plus.jpg"
+          />
+          <h5>Programming with C and C++</h5>
+          <p>Build a strong programming foundation by learning C and C++</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/financial-modeling-valuation.jpg"
+          />
+          <h5>Financial Modeling and Valuation</h5>
+          <p>Learn financial modeling and Valuation techniques from scratch</p>
+          <div>
+            <button>Duration:6months</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="programming" class="container mt-5">
+      <h5>Programming(19)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/python.jpg"
+          />
+          <h5>Programming with Python</h5>
+          <p>Build a fantasy cricket using Python language</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/web-development.jpg"
+          />
+          <h5>Web Development</h5>
+          <p>Learn how to create websites from scratch</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/hacking.jpg"
+          />
+          <h5>Ethical Hacking</h5>
+          <p>Learn to hack and secure web applications</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/c-plus-plus.jpg"
+          />
+          <h5>Programming with C and C++</h5>
+          <p>Build a strong programming foundation by learning C and C++</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/android.jpg"
+          />
+          <h5>Android App Development</h5>
+
+          <p>Build your own food ordering app</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/java.jpg"
+          />
+          <h5>Core Java</h5>
+          <p>Develop system applications from scratch</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/react.jpg"
+          />
+          <h5>React</h5>
+          <p>
+            Master the front-end powerhouse used to build seamless applications!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/blockchain.jpg"
+          />
+          <h5>Blockchain</h5>
+          <p>
+            Master the technology that is disruption banking,IoT,logistics, and
+            other industries
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/angular.jpg"
+          />
+          <h5>Angular</h5>
+          <p>Learn Angular and create your own social blogging website</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/git.jpg"
+          />
+          <h5>Git & GitHub</h5>
+          <p>Master most popular version control tool used by developers</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/how-to-ace-coding-interviews.jpg"
+          />
+          <h5>How to Ace Coding Interviews</h5>
+          <p>
+            Build the fundamentals of data structures & algorithms, perfect your
+            resume, & more!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/data-structures-algorithms.jpg"
+            />
+            <h5>Data Structures & Algorithms</h5>
+            <p>
+              Master the foundations of data data structures algorithms to
+              become ace programmer.
+            </p>
+            <div>
+              <button>Duration: 8 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/sas-programming.jpg"
+            />
+            <h5>SAS Programming</h5>
+            <p>
+              Learn to empower your decision making using the most trusted
+              analytics platform!
+            </p>
+            <div>
+              <button>Duration: 6 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/clinical-trials-analysis-reporting.jpg"
+            />
+            <h5>Clinical Trial Analysis & Reporting</h5>
+            <p>Learn to use SAS Programming for drug development</p>
+            <div>
+              <button>Duration: 4 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/matlab.jpg"
+            />
+            <h5>MATLAB</h5>
+            <p>
+              Master the platform used by millions of engineers and scientists!
+            </p>
+            <div>
+              <button>Duration: 6 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/software-testing.jpg"
+            />
+            <h5>Software Testing</h5>
+            <p>Master the Java basics, automation testing, and Selenium!</p>
+            <div>
+              <button>Duration: 6 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/nodejs.jpg"
+            />
+            <h5>Node JS</h5>
+            <p>
+              Master the runtime environment used by netflix, Amazon and IBM.
+            </p>
+            <div>
+              <button>Duration: 6 weeks</button><button>know more ></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/robotic-process-automation.jpg"
+          />
+          <h5>Robotic Process Automation</h5>
+          <p>Learn to build automation solutions using UiPath</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/plc-programming.jpg"
+          />
+          <h5>PLC Programming</h5>
+          <p>
+            Build efficient PLC programs for industrial automation projects!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="business&management" class="container mt-5">
+      <h5>Business & Management(9)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/digital-marketing.jpg"
+          />
+          <h5>Digital Marketing</h5>
+          <p>Learn SEO,Search Engine Marketing, Web Analytics and more</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/excel.jpg"
+          />
+          <h5>Advanced Excel</h5>
+          <p>Learn how to use Microsoft Excel from scratch</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/financial-modeling-valuation.jpg"
+          />
+          <h5>Financial Modeling and Valuation</h5>
+          <p>Learn financial modeling and Valuation techniques from scratch</p>
+          <div>
+            <button>Duration:6months</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/business-communication-skills.jpg"
+          />
+          <h5>Business Communication Skills</h5>
+          <p>Develop effective skills for the workplace</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/trading.jpg"
+          />
+          <h5>Beginner's Trading Certification</h5>
+          <p>Learn stock market trading strategies</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/how-to-startup.jpg"
+          />
+          <h5>How to Startup</h5>
+          <p>
+            Master idea validation , pitching, funding, and more to build your
+            startup!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/tally.jpg"
+          />
+          <h5>Tally</h5>
+
+          <p>
+            Master Indian's leading software for accounting, taxation and more!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/hr.jpg"
+          />
+          <h5>Human Resource Management</h5>
+          <p>Master the art of managing the employee lifecycle!</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/sql-data-analytics.jpg"
+          />
+          <h5>SQL for Data Analytics</h5>
+          <p>
+            Learn different data operations, joins,subqueries, and other
+            functions
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="coreEngi" class="container mt-5">
+      <h5>Core Engineering(14)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/autocad.jpg"
+          />
+          <h5>AutoCAD</h5>
+          <p>Learn to build 2D drafts and 3D models in AutoCAD</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/autocad-three-d.jpg"
+          />
+          <h5>AutoCAD 3D</h5>
+          <p>Master the art 3D modeling in AutoCAD!</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/solidworks.jpg"
+          />
+          <h5>SOLIDWORKS</h5>
+          <p>Begin your journey as 3D Design Engineer</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/advanced-solidworks.jpg"
+          />
+          <h5>Financial Modeling and Valuation</h5>
+          <p>
+            Learn the advanced features to become a certified SOLIDWORKS
+            professional.
+          </p>
+          <div>
+            <button>Duration:6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/business-communication-skills.jpg"
+          />
+          <h5>STAAD Pro</h5>
+          <p>
+            Master the leading structural analysis and design tool used by Civil
+            Engineers
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/fusion-360.jpg"
+          />
+          <h5>Fusion 360</h5>
+          <p>
+            Master all-in-one software used to design, manufacture and simulate
+            products
+          </p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/iot.jpg"
+          />
+          <h5>Internet of Things</h5>
+          <p>Learn to build IoT projects from scratch in 4 weeks</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/ansys.jpg"
+          />
+          <h5>Ansys</h5>
+
+          <p>Master the industry leading engineering simulation software</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/three-d-printing.jpg"
+          />
+          <h5>3D Printing</h5>
+          <p>
+            Learn the disruption technology to design and develop products in
+            speed
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/pcb-design.jpg"
+          />
+          <h5>PCB Design</h5>
+          <p>Learn to design compat efficient and errorfree PCBs.</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="datasc" class="container mt-5">
+      <h5>Data Science(9)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/machine-learning.jpg"
+          />
+          <h5>Machine Learning</h5>
+          <p>
+            Learn Machine Learning from scratch and take the first step towards
+            AI
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/data-science.jpg"
+          />
+          <h5>Data Science</h5>
+          <p>Learn the ABCs of Data Science</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/tableau.jpg"
+          />
+          <h5>Tableau</h5>
+          <p>
+            Master the industry leading tool used to analyze data & create
+            actionable insights
+          </p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/deep-learning.jpg"
+          />
+          <h5>Deep Learning</h5>
+          <p>
+            Learn about different neural networks and develop futuristic
+            application!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/sas-programming.jpg"
+          />
+          <h5>SAS Programming</h5>
+          <p>
+            Learn to empower your decision making using the most trusted
+            analytics platform!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/clinical-trials-analysis-reporting.jpg"
+            />
+            <h5>Clinical Trial Analysis & Reporting</h5>
+            <p>Learn to use SAS Programming for drug development</p>
+            <div>
+              <button>Duration: 4 weeks</button><button>know more ></button>
+            </div>
+          </div>
+          <div class="card-learing">
+            <img
+              src="https://trainings.internshala.com/static/images/home/sql-data-analytics.jpg"
+            />
+            <h5>SQL for Data Analytics</h5>
+            <p>
+              Learn different data operations, joins,subqueries, and other
+              functions
+            </p>
+            <div>
+              <button>Duration: 6 weeks</button><button>know more ></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/android.jpg"
+          />
+          <h5>Android App Development</h5>
+
+          <p>Build your own food ordering app</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/c-plus-plus.jpg"
+          />
+          <h5>Programming with C and C++</h5>
+          <p>Build a strong programming foundation by learning C and C++</p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/financial-modeling-valuation.jpg"
+          />
+          <h5>Financial Modeling and Valuation</h5>
+          <p>Learn financial modeling and Valuation techniques from scratch</p>
+          <div>
+            <button>Duration:6months</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="design" class="container mt-5">
+      <h5>Design(7)</h5>
+      <article class="responsive">
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/graphic-design.jpg"
+          />
+          <h5>Graphics Design</h5>
+          <p>Learn graphics using Adobe photoshop</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/ui-ux-design.jpg"
+          />
+          <h5>UI/UX Design</h5>
+          <p>
+            Master typography, colour, wiregraming, and more to become a pro
+            UI/UX designer
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/video-editing.jpg"
+          />
+          <h5>Video Editing</h5>
+          <p>
+            Master transitions, visual effects, & more in Adobe Premiere Pro to
+            edit like a pro!
+          </p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/animation.jpg"
+          />
+          <h5>Animation</h5>
+          <p>
+            Master the foundation of animations & more using Adobe After
+            Effects!
+          </p>
+          <div>
+            <button>Duration: 8 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/wordpress.jpg"
+          />
+          <h5>WordPress</h5>
+          <p>Master the world's most popular content management platform!</p>
+          <div>
+            <button>Duration: 6 weeks</button><button>know more ></button>
+          </div>
+        </div>
+        <div class="card-learing">
+          <img
+            src="https://trainings.internshala.com/static/images/home/colour-theory.jpg"
+          />
+          <h5>Colour Theory for Designers</h5>
+          <p>Learn the basics of colour theory and its applications!</p>
+          <div>
+            <button>Duration: 4 weeks</button><button>know more ></button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="mb-0">
+      <div
+        class="
+          container-fluid
+          d-flex
+          flex-column flex-lg-row flex-md-column
+          align-item-center
+          justify-content-around
+          pb-0
+          pt-5
+          pl-5
+          pr-5
+        "
+      >
+        <div class="items">
+          <h5>Internshala</h5>
+          <p>Address: Mysore<br />Phone:123457689<br />Email:internshala.org</p>
+        </div>
+        <div class="items">
+          <h6>Information</h6>
+          <p>About Us<br />Checkout<br />Contact<br />Services</p>
+        </div>
+        <div class="items">
+          <h6>My Account</h6>
+          <p>My Account<br />enroled<br />Contact<br /></p>
+        </div>
+        <div class="items">
+          <h6>Join our organization</h6>
+          <input type="email" placeholder="example@gmail.com" />
+          <span><a href="">Send</a></span>
+        </div>
+      </div>
+      <div class="text-center p-3"><p>copyright @ 2020</p></div>
+    </footer>
+    <script src="./assets/jquery-3.5.1.min.js"></script>
+    <script src="./assets/bootstrap.bundle.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

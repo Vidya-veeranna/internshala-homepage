@@ -1,0 +1,228 @@
+/**********  Global  ************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --light-gray: #dddddd;
+  --grey: #888888;
+  --primary-color: #ffff;
+  --secondary-color: #00a5ec;
+  --sub-title: #666666;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+  --load: 500ms;
+  --delay: 600ms;
+}
+
+/*************Slider****************/
+
+.carousel,
+.carousel-item {
+  width: 100vw;
+  height: 370px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary-color);
+  padding: 0.1rem;
+}
+.carousel-indicators :not(.active) {
+  background-color: var(--primary-color);
+  padding: 0.1rem;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .carousel,
+  .carousel-item {
+    height: 24em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel,
+  .carousel-item {
+    height: 300px;
+  }
+}
+/************Navigation bar**************/
+
+header nav {
+  background-color: var(--primary-color);
+  height: 58px;
+}
+.navbar-nav {
+  width: 100%;
+  margin-bottom: 5px;
+}
+nav img {
+  width: 190px;
+  height: 32px;
+  margin-left: 40px;
+}
+nav .navbar-brand {
+  font-family: var(--gugi);
+}
+.dropdown-menu {
+  width: 300px;
+}
+.dropdown-menu .dropdown-item {
+  background-color: #ffff;
+  font-weight: normal;
+}
+.dropdown a {
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  width: 169px;
+  height: 32px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px !important;
+}
+.dropdown a p {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-top: 0px !important;
+  padding-top: 5px;
+}
+.login {
+  width: 80px;
+  height: 32px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: auto;
+  text-align: center;
+  float: right;
+}
+.login a {
+  padding: 0px;
+  margin-top: 0px !important;
+  color: var(--secondary-color) !important;
+  font-weight: bold;
+}
+
+/*******************card******************/
+.prev-1,
+.next-1 {
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+.prev-1 {
+  margin-top: 328px;
+  margin-left: 470px;
+}
+.next-1 {
+  margin-bottom: 20px;
+  margin-left: 605px;
+  margin-top: -5px;
+}
+h3 {
+  margin: 50px 15px 0px;
+  font-size: 28px;
+}
+.card-learing,
+.card-learing.slick-slide {
+  width: 290px;
+  height: 290px;
+  text-align: center;
+  padding: 10px 10px 0px;
+  margin: 24px 36px 20px 4px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card-learing img {
+  width: 100%;
+  height: 146px;
+  padding: 10px 0px 0px;
+}
+section h5 {
+  color: var(--sub-title);
+}
+.card-learing h5 {
+  margin: 10px 0px;
+  font-size: 18px;
+  color: var(--sub-title);
+}
+.card-learing p {
+  height: 36px;
+  margin: 0px 10px 10px;
+  font-size: 13px;
+}
+.card-learing button {
+  font-size: 13px;
+  width: 50%;
+  height: 38.4px;
+  margin-top: 8px;
+  background-color: transparent;
+  border-bottom: none;
+  border-top: 1px solid var(--grey);
+  border-left: none;
+}
+.card-learing button:nth-child(1) {
+  border-right: 1px solid var(--grey);
+  color: var(--grey);
+}
+.card-learing button:nth-child(2) {
+  border-right: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.slick-dots {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  font-size: 0px;
+  color: #ffff;
+  line-height: 100px;
+  text-align: center;
+  background: var(--light-gray);
+  margin-right: 5px;
+  padding: 0px;
+  display: inline-block;
+  border: none;
+}
+.slick-dots li button:focus {
+  background-color: var(--secondary-color);
+}
+.slick-dots .slick-active button {
+  background: var(--secondary-color);
+}
+
+/****************Footer***************/
+
+footer {
+  background-color: #2d2d2d;
+  color: white;
+}
+footer .items span a {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
